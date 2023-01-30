@@ -1,0 +1,44 @@
+@import 'vars';
+@import 'mixin';
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+.building {
+    @include heading;
+    background-image: url(photos/building.jpg);
+    background-size: cover;
+    z-index: -1;
+}
+.gradient {
+    background: rgb(1,0,255);
+    background: linear-gradient(135deg, rgba(1,0,255,0.25) 0%, rgba(239,255,0,0.25) 100%);
+    z-index: 1;
+    @include heading;
+    @include flexy;
+    justify-content: center;
+}
+.inner {
+    @include heading;
+    @include flexy;
+    align-items: center;
+    width: 75%;
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #af45dc;
+        object-fit: cover;
+    }
+}
+h1 {
+    color: $headerColor;
+    font-size: 3em;
+    margin: 0;
+}
+.name p {
+    color: $headerColor;
+    size: $h2Size;
+}

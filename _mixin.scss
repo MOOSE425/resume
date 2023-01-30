@@ -1,0 +1,15 @@
+@import '_vars';
+
+
+@mixin heading {
+    width: 100%;
+    height: 275px;
+}
+@mixin flexy {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin sectionHeading {
+    font-size: $h2Size;
+    color: $headerColor;
+}
