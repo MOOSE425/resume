@@ -6,6 +6,10 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
 }
+body, section {
+    margin: 0;
+    padding: 0;
+}
 .building {
     @include heading;
     background-image: url(photos/building.jpg);
@@ -44,9 +48,9 @@ h1 {
 }
 .information {
     @include flexy;
+    padding-bottom: 2rem;
     justify-content: center;
     width: 100%;
-    height:fit-content;
     padding-top: 2em;
     background: rgb(255,255,255);
 background: linear-gradient(90deg, rgba(255,255,255,0.25) 40%, rgba(239,239,239,1) 40%);
@@ -54,8 +58,42 @@ background: linear-gradient(90deg, rgba(255,255,255,0.25) 40%, rgba(239,239,239,
 .bar {
     @include bar;
 }
+.contact {
+    @include flexy;
+    justify-content: flex-start;
+    align-items: center;
+}
+.pin {
+    background-image: url(photos/pin.png);
+    background-size: cover;
+}
+.letter {
+    background-image: url(photos/mail.png);
+    background-size: cover;
+}
+.phone {
+    background-image: url(photos/phone.png);
+    background-size: cover;
+}
+.linked {
+    background-image: url(photos/link.png);
+    background-size: cover;
+}
+.contact p {
+    padding-left: .7rem;
+}
 .personalInfo {
     width: 35%;
+}
+.contactInfo {
+    @include flexy;
+    justify-content: center;
+    flex-direction: column;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+    background-color: #4F4F4F;
 }
 .experiance {
     width: 55%;
@@ -68,4 +106,19 @@ background: linear-gradient(90deg, rgba(255,255,255,0.25) 40%, rgba(239,239,239,
 .break {
     color: $textColor;
     letter-spacing: $spaced;
+    text-transform: uppercase;
+}
+.company {
+    color: $companyColor;
+    margin-bottom: .2rem;
+}
+.bold {
+    color: $companyColor;
+    font-weight: bold;
+}
+.information p, .gray {
+    color: $textColor;
+}
+.date {
+    margin-top: 0;
 }

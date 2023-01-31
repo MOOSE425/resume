@@ -4,6 +4,11 @@
   font-size: 100%;
 }
 
+body, section {
+  margin: 0;
+  padding: 0;
+}
+
 .building {
   width: 100%;
   height: 275px;
@@ -54,11 +59,9 @@ h1 {
 .information {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 2rem;
   justify-content: center;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   padding-top: 2em;
   background: rgb(255, 255, 255);
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.25) 40%, rgb(239, 239, 239) 40%);
@@ -70,8 +73,52 @@ h1 {
   background-color: #797F7F;
 }
 
+.contact {
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.pin {
+  background-image: url(photos/pin.png);
+  background-size: cover;
+}
+
+.letter {
+  background-image: url(photos/mail.png);
+  background-size: cover;
+}
+
+.phone {
+  background-image: url(photos/phone.png);
+  background-size: cover;
+}
+
+.linked {
+  background-image: url(photos/link.png);
+  background-size: cover;
+}
+
+.contact p {
+  padding-left: 0.7rem;
+}
+
 .personalInfo {
   width: 35%;
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  background-color: #4F4F4F;
 }
 
 .experiance {
@@ -87,5 +134,24 @@ h1 {
 
 .break {
   color: #797F7F;
-  letter-spacing: 3;
+  letter-spacing: 0.6rem;
+  text-transform: uppercase;
+}
+
+.company {
+  color: #000000;
+  margin-bottom: 0.2rem;
+}
+
+.bold {
+  color: #000000;
+  font-weight: bold;
+}
+
+.information p, .gray {
+  color: #797F7F;
+}
+
+.date {
+  margin-top: 0;
 }/*# sourceMappingURL=style.css.map */
