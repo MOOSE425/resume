@@ -1,4 +1,4 @@
-@import '_vars';
+@use '_vars' as *;
 
 
 @mixin heading {
@@ -12,4 +12,9 @@
 @mixin sectionHeading {
     font-size: $h2Size;
     color: $headerColor;
+}
+@mixin bar {
+    width: 60px;
+    height: 5px;
+    background-color: $textColor;
 }

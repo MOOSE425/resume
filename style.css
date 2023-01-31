@@ -49,4 +49,43 @@ h1 {
 .name p {
   color: rgb(255, 255, 255);
   size: 1.5em;
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 2em;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.25) 40%, rgb(239, 239, 239) 40%);
+}
+
+.bar {
+  width: 60px;
+  height: 5px;
+  background-color: #797F7F;
+}
+
+.personalInfo {
+  width: 35%;
+}
+
+.experiance {
+  width: 55%;
+  background-color: #EFEFEF;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.break {
+  color: #797F7F;
+  letter-spacing: 3;
 }/*# sourceMappingURL=style.css.map */

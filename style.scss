@@ -1,5 +1,5 @@
-@import 'vars';
-@import 'mixin';
+@use '_vars' as *;
+@use '_mixin' as *;
 
 * {
     box-sizing: border-box;
@@ -41,4 +41,31 @@ h1 {
 .name p {
     color: $headerColor;
     size: $h2Size;
+}
+.information {
+    @include flexy;
+    justify-content: center;
+    width: 100%;
+    height:fit-content;
+    padding-top: 2em;
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,0.25) 40%, rgba(239,239,239,1) 40%);
+}
+.bar {
+    @include bar;
+}
+.personalInfo {
+    width: 35%;
+}
+.experiance {
+    width: 55%;
+    background-color: $experienceColor;
+}
+.info {
+    @include flexy;
+    width: 85%
+}
+.break {
+    color: $textColor;
+    letter-spacing: $spaced;
 }
